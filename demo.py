@@ -1,3 +1,6 @@
+from sympy import symbols, Sum, latex, simplify
+
+
 # Update the function to include the calculation of mi and m_hat_i, and their LaTeX representations
 def calculate_sums_with_steps_and_values(f_x, n_val):
     x, i = symbols('x i')
@@ -54,5 +57,11 @@ U(P_{{{n_val}}}) &= {latex(U_Pn_expr)} \\\\
     return latex_code
 
 # Generate LaTeX code with all steps and function values
-latex_output_with_steps_and_values = calculate_sums_with_steps_and_values(x-1, 5)
-print(latex_output_with_steps_and_values)
+# Define the function f(x) = -x + 1
+x = symbols('x')
+f_x = -x + 1
+n_val = symbols('n')  # Use a symbolic value for n
+
+# Generate LaTeX code with all steps
+latex_output_with_steps = calculate_sums_with_steps(f_x, n_val)
+print(latex_output_with_steps)
