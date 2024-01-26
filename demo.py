@@ -63,5 +63,5 @@ f_x = -x + 1
 n_val = symbols('n')  # Use a symbolic value for n
 
 # Generate LaTeX code with all steps
-latex_output_with_steps = calculate_sums_with_steps(f_x, n_val)
+latex_output_with_steps = calculate_sums_with_steps_and_values(f_x, n_val)
 print(latex_output_with_steps)
