@@ -57,9 +57,9 @@ U(P_{{{n_val}}}) &= {latex(U_Pn_expr)} \\\\
     return latex_code
 
 # Generate LaTeX code with all steps and function values
-# Define the function f(x) = -x + 1
+# Define the function f(x) = x*x
 x = symbols('x')
-f_x = -x + 1
+f_x = x*x
 n_val = symbols('n')  # Use a symbolic value for n
 
 # Generate LaTeX code with all steps
